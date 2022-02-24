@@ -47,22 +47,22 @@ INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, du
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 
-INSETO INTO tb_deliver(uri, moment, status, feedback, correct_Count, lesson_id, offer_id, user_id) VALUES ('https://github.com/JonatasFO/bds-dslearn', TIMESTAMP WITH TIME ZONE '2020-11-27T03:00:00Z, 0, null, null, 4, 1, 1);
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, lesson_id, offer_id, user_id) VALUES ('https://github.com/JonatasFO/bds-dslearn', TIMESTAMP WITH TIME ZONE '2020-11-27T03:00:00Z', 0, null, null, 4, 1, 1);
 
-INSERT INTO tb_topic(title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 1', 'Corpo do topico 1', TIMESTAMP WITH TIME ZONE '2020-12-12T03:00:00Z', 1, 1, 1);
-INSERT INTO tb_topic(title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 2', 'Corpo do topico 2', TIMESTAMP WITH TIME ZONE '2020-12-13T03:00:00Z', 2, 1, 1);
-INSERT INTO tb_topic(title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 3', 'Corpo do topico 3', TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z', 2, 1, 1);
-INSERT INTO tb_topic(title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 4', 'Corpo do topico 4', TIMESTAMP WITH TIME ZONE '2020-12-15T03:00:00Z', 1, 1, 2);
-INSERT INTO tb_topic(title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 5', 'Corpo do topico 5', TIMESTAMP WITH TIME ZONE '2020-12-16T03:00:00Z', 1, 1, 2);
-INSERT INTO tb_topic(title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 6', 'Corpo do topico 6', TIMESTAMP WITH TIME ZONE '2020-12-17T03:00:00Z', 2, 1, 3);
+INSERT INTO tb_topic (title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 1', 'Corpo do topico 1', TIMESTAMP WITH TIME ZONE '2020-12-12T03:00:00Z', 1, 1, 1);
+INSERT INTO tb_topic (title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 2', 'Corpo do topico 2', TIMESTAMP WITH TIME ZONE '2020-12-13T03:00:00Z', 2, 1, 1);
+INSERT INTO tb_topic (title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 3', 'Corpo do topico 3', TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z', 2, 1, 1);
+INSERT INTO tb_topic (title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 4', 'Corpo do topico 4', TIMESTAMP WITH TIME ZONE '2020-12-15T03:00:00Z', 1, 1, 2);
+INSERT INTO tb_topic (title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 5', 'Corpo do topico 5', TIMESTAMP WITH TIME ZONE '2020-12-16T03:00:00Z', 1, 1, 2);
+INSERT INTO tb_topic (title, body, moment, auhor_id, offer_id, lesson_id) VALUES ('Titulo do topico 6', 'Corpo do topico 6', TIMESTAMP WITH TIME ZONE '2020-12-17T03:00:00Z', 2, 1, 3);
 
-INSERT INTO tb_topic_likes(topic_id, user_id) VALUES (1, 2);
-INSERT INTO tb_topic_likes(topic_id, user_id) VALUES (2, 1);
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (1, 2);
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (2, 1);
 
-INSERT INTO tb_reply(body, moment, topic, author) VALUES ('Tente reiniciar o computador', TIMESTAMP WITH TIME ZONE '2020-12-12T03:00:00Z', 1, 2);
-INSERT INTO tb_reply(body, moment, topic, author) VALUES ('Deu certo, valeu', TIMESTAMP WITH TIME ZONE '2020-12-17T03:00:00Z', 1, 1);
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('Tente reiniciar o computador', TIMESTAMP WITH TIME ZONE '2020-12-12T03:00:00Z', 1, 2);
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('Deu certo, valeu', TIMESTAMP WITH TIME ZONE '2020-12-17T03:00:00Z', 1, 1);
 
-INSERT INTO tb_reply_likes(reply_id, user_id) VALUES (1, 1);
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 1);
 
 
 
