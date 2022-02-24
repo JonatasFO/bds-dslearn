@@ -100,8 +100,6 @@ public class Reply implements Serializable {
 	public Set<User> getLikes() {
 		return likes;
 	}
-	
-	
 
 	@Override
 	public int hashCode() {
