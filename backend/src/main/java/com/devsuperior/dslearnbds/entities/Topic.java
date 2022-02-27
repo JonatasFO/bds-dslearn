@@ -36,7 +36,7 @@ public class Topic implements Serializable {
 	private Instant moment;
 
 	@ManyToOne
-	@JoinColumn(name = "auhor_id")
+	@JoinColumn(name = "author_id")
 	private User author;
 
 	@ManyToOne
