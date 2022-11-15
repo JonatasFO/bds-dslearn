@@ -11,7 +11,7 @@ import com.devsuperior.dslearnbds.repositories.UserRepository;
 import com.devsuperior.dslearnbds.services.exceptions.UnauthorizedException;
 
 @Service
-public class AuthServices {
+public class AuthService {
 
 	@Autowired
 	private UserRepository userRepository;

@@ -24,7 +24,7 @@ public class UserService implements UserDetailsService {
 	private UserRepository repository;
 
 	@Autowired
-	private AuthServices authServices;
+	private AuthService authServices;
 
 	public UserDTO findById(Long id) {
 		authServices.validateSelfOrAdmin(id);
